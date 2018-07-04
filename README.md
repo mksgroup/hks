@@ -1,2 +1,2 @@
 # hks
-Hub Knowledge System
+Hub Knowledge Service
