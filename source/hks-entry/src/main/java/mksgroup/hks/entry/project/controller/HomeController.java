@@ -17,7 +17,7 @@ public class HomeController {
      * Goto the index page.
      * @return
      */
-    @RequestMapping("/")
+    @RequestMapping({"/", "/index"})
     public String login() {
         return "index";
     }
