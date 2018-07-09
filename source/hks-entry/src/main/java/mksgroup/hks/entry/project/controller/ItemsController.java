@@ -14,11 +14,19 @@ import org.springframework.web.bind.annotation.GetMapping;
 public class ItemsController {
 
     /**
-     * Goto the index page.
+     * Goto the typing page.
      * @return
      */
     @GetMapping({"/items/typing", "/typing"})
-    public String login() {
+    public String typing() {
         return "items/typing";
+    }
+    /**
+     * Goto the detail page.
+     * @return
+     */
+    @GetMapping({"/items/detail"})
+    public String detail() {
+        return "items/detail";
     }
 }

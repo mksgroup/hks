@@ -1,0 +1,238 @@
+<div th:fragment="items-detail-screen">
+    <div class="app-content content">
+        <div class="content-wrapper">
+            <div class="content-header row">
+                <div class="content-header-left col-md-6 col-12 mb-2">
+                    <h3 class="content-header-title">About items</h3>
+                    <div class="row breadcrumbs-top">
+                        <div class="breadcrumb-wrapper col-12">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                                <li class="breadcrumb-item"><a href="#">Items</a></li>
+                                <li class="breadcrumb-item active">Detail about items</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="content-body">
+                <section id="content" class="card">
+                    <div class="card-content">
+                        <div class="card-body row">
+                            <div class="col-md-6">
+                                <div class="timeline-item">
+                                    <div class="timeline-card">
+                                        <div class="card-header">
+                                            <div class="media">
+                                                <div class="media-left mr-1">
+                                                    <a href="#"> <span class="avatar avatar-md avatar-busy"><img
+                                                            th:src="@{#{theme.root} + 'app-assets/images/portrait/small/avatar-s-18.png'}"
+                                                            alt="avatar"></span> <i></i>
+                                                    </a>
+                                                </div>
+                                                <div class="media-body">
+                                                    <h4 class="card-title">
+                                                        <a href="#">Pahm Trugno</a>
+                                                    </h4>
+                                                    <p class="card-subtitle text-muted mb-0 pt-1">
+                                                        <span class="font-small-3">15 Oct, 2015 at 8.00 A.M</span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-content">
+                                            <div class="center-slider mx-auto form-group">
+                                                <div id="default-slider" style="height: 360px;">
+                                                    <ul>
+                                                        <li><img th:src="@{#{theme.root} + 'app-assets/images/carousel/09.jpg'}"
+                                                            alt="01" class="img-fluid" width="480" height="360"></li>
+                                                        <li><img th:src="@{#{theme.root} + 'app-assets/images/carousel/11.jpg'}"
+                                                            alt="02" class="img-fluid" width="480" height="360"></li>
+                                                        <li><img th:src="@{#{theme.root} + 'app-assets/images/carousel/10.jpg'}"
+                                                            alt="03" class="img-fluid" width="480" height="360"></li>
+                                                        <li><img th:src="@{#{theme.root} + 'app-assets/images/carousel/15.jpg'}"
+                                                            alt="04" class="img-fluid" width="480" height="360"></li>
+                                                        <li><img th:src="@{#{theme.root} + 'app-assets/images/carousel/01.jpg'}"
+                                                            alt="05" class="img-fluid" width="480" height="360"></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="card-content">
+                                                <div class="card-body">
+                                                    <h4>Description</h4>
+                                                    <p class="card-text">Nullam facilisis fermentum aliquam.
+                                                        Suspendisse ornare dolor vitae libero hendrerit auctor lacinia a
+                                                        ligula. Curabitur elit tellus, porta ut orci sed, fermentum
+                                                        bibendum nisi.</p>
+                                                    <ul class="list-inline">
+                                                        <li class="pr-1"><a href="#" class="" data-toggle="tooltip"
+                                                            data-placement="bottom" data-title="Like"><span
+                                                                class="fa fa-thumbs-o-up"></span> Like <span
+                                                                class="badge badge-pill badge-info float-right">123</span></a></li>
+                                                        <li class="pr-1"><a href="#" class="" data-toggle="tooltip"
+                                                            data-placement="bottom" data-title="Comment"><span
+                                                                class="fa fa-commenting-o"></span> Comment <span
+                                                                class="badge badge-pill badge-info float-right">123</span></a></li>
+                                                        <li><a href="#" class="" data-toggle="tooltip"
+                                                            data-placement="bottom" data-title="Share"><span
+                                                                class="fa fa-share-alt"></span> Share <span
+                                                                class="badge badge-pill badge-info float-right">123</span></a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="card-footer px-0 py-0">
+                                                <div class="card-body">
+                                                    <div class="media">
+                                                        <div class="media-left mr-1">
+                                                            <a href="#"> <span class="avatar avatar-online"><img
+                                                                    th:src="@{#{theme.root} + 'app-assets/images/portrait/small/avatar-s-4.png'}"
+                                                                    alt="avatar"></span>
+                                                            </a>
+                                                        </div>
+                                                        <div class="media-body">
+                                                            <p class="text-bold-600 mb-0">
+                                                                <a href="#">Crystal Lawson</a>
+                                                            </p>
+                                                            <p>Cras sit amet nibh libero, in gravida nulla. Nulla
+                                                                vel metus scelerisque ante sollicitudin commodo.</p>
+                                                            <ul class="list-inline">
+                                                                <li class="pr-1"><a href="#" class=""><span
+                                                                        class="fa fa-thumbs-o-up"></span> Like <span
+                                                                        class="badge badge-pill badge-info float-right">123</span></a></li>
+                                                                <li class="pr-1"><a href="#" class=""><span
+                                                                        class="fa fa-commenting-o"></span> Reply <span
+                                                                        class="badge badge-pill badge-info float-right">123</span></a></li>
+                                                            </ul>
+                                                            <div class="media">
+                                                                <div class="media-left mr-1">
+                                                                    <a href="#"> <span class="avatar avatar-online"><img
+                                                                            th:src="@{#{theme.root} + 'app-assets/images/portrait/small/avatar-s-6.png'}"
+                                                                            alt="avatar"></span>
+                                                                    </a>
+                                                                </div>
+                                                                <div class="media-body">
+                                                                    <p class="text-bold-600 mb-0">
+                                                                        <a href="#">Rafila Găitan</a>
+                                                                    </p>
+                                                                    <p>Gravida nulla. Nulla vel metus scelerisque
+                                                                        ante sollicitudin.</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <fieldset class="form-group position-relative has-icon-left mb-0">
+                                                        <input type="text" class="form-control"
+                                                            placeholder="Write comments...">
+                                                        <div class="form-control-position">
+                                                            <i class="fa fa-dashcube"></i>
+                                                        </div>
+                                                    </fieldset>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /.col-md-6 -->
+                            <div class="col-md-6">
+                                <div class="card-content">
+                                    <!-- attached -->
+                                    <div class="card-body">
+                                        <h4>Attached</h4>
+                                        <div class="table-responsive">
+                                            <table class="table">
+                                                <thead>
+                                                    <tr>
+                                                        <th>#</th>
+                                                        <th>File name</th>
+                                                        <th>Extension</th>
+                                                        <th>Uploaded</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <th scope="row">1</th>
+                                                        <td>Mark</td>
+                                                        <td>.pdf</td>
+                                                        <td>15 Oct, 2015</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">2</th>
+                                                        <td>Jacob</td>
+                                                        <td>.png</td>
+                                                        <td>15 Oct, 2015</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">3</th>
+                                                        <td>Larry</td>
+                                                        <td>.jpg</td>
+                                                        <td>15 Oct, 2015</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <!-- /.attached -->
+                                        <!-- about -->
+                                        <h4>About</h4>
+                                        <p class="card-text">
+                                            <i> Uploaded: 15 Oct, 2015 at 8.00 A.M <br /> Category: Article
+                                            </i>
+                                        </p>
+                                        <!-- /.about -->
+                                        <!-- Image grid -->
+                                        <h4>Related</h4>
+
+                                        <div class="card-content">
+                                            <div class="card-body my-gallery" itemscope
+                                                itemtype="http://schema.org/ImageGallery">
+                                                <div class="row">
+                                                    <figure class="col-md-3 col-sm-6 col-12" itemprop="associatedMedia"
+                                                        itemscope itemtype="http://schema.org/ImageObject">
+                                                        <a href="#" itemprop="contentUrl" data-size="480x360"> <img
+                                                            class="img-thumbnail img-fluid"
+                                                            th:src="@{#{theme.root} + 'app-assets/images/gallery/1.jpg'}"
+                                                            itemprop="thumbnail" alt="Image description" />
+                                                        </a>
+                                                    </figure>
+                                                    <figure class="col-md-3 col-sm-6 col-12" itemprop="associatedMedia"
+                                                        itemscope itemtype="http://schema.org/ImageObject">
+                                                        <a href="../../../app-assets/images/gallery/2.jpg"
+                                                            itemprop="contentUrl" data-size="480x360"> <img
+                                                            class="img-thumbnail img-fluid"
+                                                            th:src="@{#{theme.root} + 'app-assets/images/gallery/2.jpg'}"
+                                                            itemprop="thumbnail" alt="Image description" />
+                                                        </a>
+                                                    </figure>
+                                                    <figure class="col-md-3 col-sm-6 col-12" itemprop="associatedMedia"
+                                                        itemscope itemtype="http://schema.org/ImageObject">
+                                                        <a href="#" itemprop="contentUrl" data-size="480x360"> <img
+                                                            class="img-thumbnail img-fluid"
+                                                            th:src="@{#{theme.root} + 'app-assets/images/gallery/3.jpg'}"
+                                                            itemprop="thumbnail" alt="Image description" />
+                                                        </a>
+                                                    </figure>
+                                                    <figure class="col-md-3 col-sm-6 col-12" itemprop="associatedMedia"
+                                                        itemscope itemtype="http://schema.org/ImageObject">
+                                                        <a href="#" itemprop="contentUrl" data-size="480x360"> <img
+                                                            class="img-thumbnail img-fluid"
+                                                            th:src="@{#{theme.root} + 'app-assets/images/gallery/4.jpg'}"
+                                                            itemprop="thumbnail" alt="Image description" />
+                                                        </a>
+                                                    </figure>
+                                                </div>
+                                                <ul class="list-inline float-right">
+                                                    <li class="pr-1"><a href="#" class="">View all</a></li>
+                                                </ul>
+                                            </div>
+                                            <!--/ Image grid -->
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- /.col-md-6 -->
+                            </div>
+                        </div>
+                </section>
+            </div>
+        </div>
+    </div>
+</div>
