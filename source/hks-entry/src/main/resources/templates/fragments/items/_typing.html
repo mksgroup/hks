@@ -16,138 +16,119 @@
                 </div>
             </div>
             <div class="content-body">
-                <!-- Description -->
-                <section id="description" class="card">
-                    <div class="card-header">
-                        <a class="heading-elements-toggle"><i class="fa fa-ellipsis-v font-medium-3"></i></a>
-                        <div class="heading-elements">
-                            <ul class="list-inline mb-0">
-                                <li><a data-action="reload"><i class="ft-rotate-cw"></i></a></li>
-                                <li><a data-action="close"><i class="ft-x"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="card-content">
-                        <div class="card-body">
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <div class="card">
-                                        <div class="card-content collpase show">
-                                            <div class="card-body">
-                                                <form class="form">
-                                                    <div class="form-body">
-                                                        <div class="row">
-                                                            <div class="col-md-6">
-                                                                <div class="form-group">
-                                                                    <label for="projectinput5" class="sr-only">Library</label>
-                                                                    <select id="projectinput5" name="interested"
-                                                                        class="form-control">
-                                                                        <option value="none" selected="" disabled="">Library</option>
-                                                                        <option value="design">design</option>
-                                                                        <option value="development">development</option>
-                                                                        <option value="illustration">illustration</option>
-                                                                        <option value="branding">branding</option>
-                                                                        <option value="video">video</option>
-                                                                    </select>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="card">
+                            <div class="card-content collpase show">
+                                <div class="card-body">
+                                    <form class="form form-horizontal striped-rows form-bordered">
+                                        <div class="form-body">
+                                            <div class="form-group row">
+                                                <label class="col-md-3 label-control" for="projectinput7">Library</label>
+                                                <div class="col-md-9">
+                                                    <select id="projectinput7" name="budget" class="form-control">
+                                                        <option value="0" selected="" disabled="">Library</option>
+                                                        <option value="less than 5000$">less than 5000$</option>
+                                                        <option value="5000$ - 10000$">5000$ - 10000$</option>
+                                                        <option value="10000$ - 20000$">10000$ - 20000$</option>
+                                                        <option value="more than 20000$">more than 20000$</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <label class="col-md-3 label-control" for="projectinput7">Category</label>
+                                                <div class="col-md-9">
+                                                    <select id="projectinput7" name="budget" class="form-control">
+                                                        <option value="0" selected="" disabled="">Category</option>
+                                                        <option value="less than 5000$">less than 5000$</option>
+                                                        <option value="5000$ - 10000$">5000$ - 10000$</option>
+                                                        <option value="10000$ - 20000$">10000$ - 20000$</option>
+                                                        <option value="more than 20000$">more than 20000$</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <label class="col-md-3 label-control" for="timesheetinput1">Title</label>
+                                                <div class="col-md-9">
+                                                    <div class="position-relative has-icon-left">
+                                                        <input type="text" id="timesheetinput1" class="form-control"
+                                                            placeholder="employee name" name="employeename">
+                                                        <div class="form-control-position">
+                                                            <i class="ft-user"></i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <label class="col-md-3 label-control">Main Image</label>
+                                                <div class="col-md-9">
+                                                    <label id="projectinput8" class="file center-block"> <input
+                                                        type="file" id="file"> <span class="file-custom"></span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <label class="col-md-3 label-control" for="timesheetinput7">Short
+                                                    Description</label>
+                                                <div class="col-md-9">
+                                                    <div class="position-relative has-icon-left">
+                                                        <textarea id="timesheetinput7" rows="5" class="form-control"
+                                                            name="notes" placeholder="short description..."></textarea>
+                                                        <div class="form-control-position">
+                                                            <i class="ft-file"></i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-group row file-repeater">
+                                                <label class="col-md-3 label-control">Attached Files </label>
+                                                <div class="col-md-9">
+                                                    <div data-repeater-list="repeater-list">
+                                                        <div data-repeater-item="">
+                                                            <div class="row mb-1">
+                                                                <div class="col-9 col-xl-10">
+                                                                    <label class="file center-block"> <input
+                                                                        type="file" id="file"> <span
+                                                                        class="file-custom"></span>
+                                                                    </label>
                                                                 </div>
-                                                                <div class="form-group">
-                                                                    <label for="projectinput6" class="sr-only">Category</label>
-                                                                    <select id="projectinput6" name="budget"
-                                                                        class="form-control">
-                                                                        <option value="0" selected="" disabled="">Category</option>
-                                                                        <option value="less than 5000$">less
-                                                                            than 5000$</option>
-                                                                        <option value="5000$ - 10000$">5000$ -
-                                                                            10000$</option>
-                                                                        <option value="10000$ - 20000$">10000$
-                                                                            - 20000$</option>
-                                                                        <option value="more than 20000$">more
-                                                                            than 20000$</option>
-                                                                    </select>
-                                                                </div>
-                                                                <div
-                                                                    style="width: 100%; border: 1px dotted #ccc; margin: 30px 0 30px 0;"></div>
-                                                                <div class="form-group">
-                                                                    <label for="companyName" class="sr-only">Title</label>
-                                                                    <input type="text" id="companyName"
-                                                                        class="form-control" placeholder="Title here"
-                                                                        name="company">
-                                                                </div>
-                                                                <div class="form-group">
-                                                                    <label for="">Main image </label>
-                                                                    <div>
-                                                                        <input type="file">
-                                                                    </div>
-                                                                </div>
-                                                                <div
-                                                                    style="width: 100%; border: 1px dotted #ccc; margin: 30px 0 30px 0;"></div>
-                                                                <div class="form-group file-repeater">
-                                                                    <label for="">Attached files </label>
-                                                                    <div data-repeater-list="repeater-list">
-                                                                        <div data-repeater-item="">
-                                                                            <div class="row mb-1">
-                                                                                <div class="col-9 col-xl-10">
-                                                                                    <label class="file center-block">
-                                                                                        <input type="file" id="file">
-                                                                                        <span class="file-custom"></span>
-                                                                                    </label>
-                                                                                </div>
-                                                                                <div class="col-2 col-xl-1">
-                                                                                    <button type="button"
-                                                                                        data-repeater-delete=""
-                                                                                        class="btn btn-icon btn-danger mr-1">
-                                                                                        <i class="ft-x"></i>
-                                                                                    </button>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                    <button type="button" data-repeater-create=""
-                                                                        class="btn btn-primary">
-                                                                        <i class="ft-plus"></i> Add new file
+                                                                <div class="col-2 col-xl-1">
+                                                                    <button type="button" data-repeater-delete=""
+                                                                        class="btn btn-icon btn-danger mr-1">
+                                                                        <i class="ft-x"></i>
                                                                     </button>
                                                                 </div>
                                                             </div>
-                                                            <div class="col-md-6">
-                                                                <div class="form-group">
-                                                                    <label for="projectinput8" class="sr-only">Short
-                                                                        description</label>
-                                                                    <textarea id="projectinput8" rows="3"
-                                                                        class="form-control" name="comment"
-                                                                        placeholder="Short description here..."></textarea>
-                                                                </div>
-                                                                <!-- /.form-group -->
-                                                                <div class="form-group">
-                                                                    <label for="projectinput8" class="sr-only">Description</label>
-                                                                    <textarea class="ckeditor form-control"
-                                                                        name="editor1" rows="30">Type full description here...</textarea>
-                                                                </div>
-                                                                <!-- /.form-group -->
-                                                            </div>
                                                         </div>
                                                     </div>
-                                                    <div class="form-actions">
-                                                        <div class="row">
-                                                            <div class="col-md-offset-4 col-md-4">
-                                                                <button type="button"
-                                                                    class="btn btn-outline-warning mr-1">
-                                                                    <i class="ft-x"></i> Cancel
-                                                                </button>
-                                                                <button type="submit" class="btn btn-outline-primary">
-                                                                    <i class="ft-check"></i> Save
-                                                                </button>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </form>
+                                                    <button type="button" data-repeater-create=""
+                                                        class="btn btn-primary">
+                                                        <i class="ft-plus"></i> Add new file
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <div class="form-group row last">
+                                                <label class="col-md-3 label-control" for="timesheetinput7">Description</label>
+                                                <div class="col-md-9">
+                                                    <textarea class="form-control ckeditor" name="editor1" cols="120"
+                                                        rows="30"></textarea>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
+                                        <div class="form-actions right">
+                                            <button type="button" class="btn btn-warning mr-1">
+                                                <i class="ft-x"></i> Cancel
+                                            </button>
+                                            <button type="submit" class="btn btn-primary">
+                                                <i class="fa fa-check-square-o"></i> Save
+                                            </button>
+                                        </div>
+                                    </form>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </section>
+                </div>
             </div>
         </div>
     </div>
