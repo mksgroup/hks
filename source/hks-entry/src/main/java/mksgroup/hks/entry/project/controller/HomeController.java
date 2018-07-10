@@ -21,4 +21,21 @@ public class HomeController {
     public String login() {
         return "login";
     }
+    
+    @RequestMapping("/findJob")
+    public String findJob() {
+        return "items/findJob";
+    }
+    @RequestMapping("/seeking")
+    public String seeking() {
+        return "items/seeking";
+    }
+    @RequestMapping("/detailFile")
+    public String detail() {
+        return "items/detail_file";
+    }
+    @RequestMapping("recruit")
+    public String recruit() {
+        return "items/recruit";
+    }
 }

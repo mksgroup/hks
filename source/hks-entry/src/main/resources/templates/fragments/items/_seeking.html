@@ -1,0 +1,213 @@
+
+<div th:fragment="seeking">
+    <div class="app-content content">
+        <div class="content-wrapper">
+            <div class="content-body">
+                <!-- Basic form layout section start -->
+                <section id="horizontal-form-layouts">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h4 class="card-title" id="horz-layout-basic" style="font-size: 20px">Đăng
+                                        thông tin tìm việc</h4>
+                                    <a class="heading-elements-toggle"><i class="fa fa-ellipsis-v font-medium-3"></i></a>
+                                    <div class="heading-elements">
+                                        <ul class="list-inline mb-0">
+                                            <li><a data-action="collapse"><i class="ft-minus"></i></a></li>
+                                            <li><a data-action="reload"><i class="ft-rotate-cw"></i></a></li>
+                                            <li><a data-action="expand"><i class="ft-maximize"></i></a></li>
+                                            <li><a data-action="close"><i class="ft-x"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="card-content collpase show">
+                                    <div class="card-body">
+                                        <div class="card-text">
+                                            <p>
+                                                This is the basic horizontal form with labels on left and form controls
+                                                on right in one line. Add
+                                                <code>.form-horizontal</code>
+                                                class to the form tag to have horizontal form styling. To define form
+                                                sections use
+                                                <code>form-section</code>
+                                                class with any heading tags.
+                                            </p>
+                                        </div>
+                                        <form class="form form-horizontal">
+                                            <div class="form-body">
+                                                <h4 class="form-section">
+                                                    <i class="ft-user"></i> Thông tin tổng quan (bắt buộc)
+                                                </h4>
+                                                <div class="form-group row">
+                                                    <label class="col-md-3 label-control" for="projectinput1">Họ
+                                                        và tên: </label>
+                                                    <div class="col-md-9">
+                                                        <input type="text" id="projectinput1" class="form-control"
+                                                            placeholder="Họ và tên" name="fname">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row">
+                                                    <label class="col-md-3 label-control" for="projectinput1">Ngày
+                                                        sinh: </label>
+                                                    <div class="col-md-9">
+                                                        <div class="position-relative has-icon-left">
+                                                            <input type="date" id="timesheetinput3" class="form-control"
+                                                                name="date">
+                                                            <div class="form-control-position">
+                                                                <i class="ft-message-square"></i>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row">
+                                                    <label class="col-md-3 label-control" for="projectinput1">Giới
+                                                        tính: </label>
+                                                    <div class="col-md-9">
+                                                        <div class="input-group">
+                                                            <div class="d-inline-block custom-control custom-radio mr-1">
+                                                                <input type="radio" name="customer1"
+                                                                    class="custom-control-input" checked="" id="yes">
+                                                                <label class="custom-control-label" for="yes">Nam</label>
+                                                            </div>
+                                                            <div class="d-inline-block custom-control custom-radio">
+                                                                <input type="radio" name="customer1"
+                                                                    class="custom-control-input" id="no"> <label
+                                                                    class="custom-control-label" for="no">Nữ</label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="form-group row">
+                                                    <label class="col-md-3 label-control" for="projectinput2">Địa
+                                                        chỉ: </label>
+                                                    <div class="col-md-9">
+                                                        <input type="text" id="projectinput2" class="form-control"
+                                                            placeholder="Địa chỉ" name="lname">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row">
+                                                    <label class="col-md-3 label-control" for="projectinput3">E-mail</label>
+                                                    <div class="col-md-9">
+                                                        <input type="text" id="projectinput3" class="form-control"
+                                                            placeholder="E-mail" name="email">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row">
+                                                    <label class="col-md-3 label-control" for="projectinput3">Tỉnh/Thành
+                                                        phố:</label>
+                                                    <div class="col-md-9">
+                                                        <select id="projectinput6" name="budget" class="form-control">
+                                                            <option value="0" selected="" disabled="">Thành phố</option>
+                                                            <option value="less than 5000$">Hồ Chí Minh</option>
+                                                            <option value="5000$ - 10000$">Hà Nội</option>
+                                                            <option value="10000$ - 20000$">Đà Nẳng</option>
+                                                            <option value="more than 20000$">ĐăkLăk</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row">
+                                                    <label class="col-md-3 label-control" for="projectinput4">Contact
+                                                        Number</label>
+                                                    <div class="col-md-9">
+                                                        <input type="text" id="projectinput4" class="form-control"
+                                                            placeholder="Phone" name="phone">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row">
+                                                    <label class="col-md-3 label-control" for="projectinput1">Mô
+                                                        tả ngắn gọn:</label>
+                                                    <div class="col-md-9">
+                                                        <input type="text" id="projectinput1" class="form-control"
+                                                            placeholder="Mô tả" name="fname">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row">
+                                                    <label class="col-md-3 label-control" for="projectinput1">Mô
+                                                        tả đầy đủ:</label>
+                                                    <div class="col-md-9">
+                                                        <fieldset class="form-group position-relative">
+                                                            <textarea class="form-control info"placeholder="Mô tả đầy đủ" id="tareaColor1"
+                                                                rows="3"></textarea>
+                                                        </fieldset>
+                                                    </div>
+                                                </div>
+
+                                                <h4 class="form-section">
+                                                    <i class="ft-clipboard"></i> Thông tin tài khoản (bắt buộc)
+                                                </h4>
+                                                <div class="form-group row">
+                                                    <label class="col-md-3 label-control" for="projectinput5">Địa
+                                                        điểm làm việc:</label>
+                                                    <div class="col-md-9">
+                                                        <input type="text" id="projectinput5" class="form-control"
+                                                            placeholder="Địa điểm" name="company">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row">
+                                                    <label class="col-md-3 label-control" for="projectinput6">Cấp
+                                                        bậc hiện tại:</label>
+                                                    <div class="col-md-9">
+                                                        <select id="projectinput6" name="interested"
+                                                            class="form-control">
+                                                            <option value="none" selected="" disabled="">Cấp
+                                                                bậc</option>
+                                                            <option value="design">Developer</option>
+                                                            <option value="development">Leader</option>
+                                                            <option value="illustration">Project Manager</option>
+                                                            <option value="branding">CEO</option>
+                                                            <option value="video">Director</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row">
+                                                    <label class="col-md-3 label-control" for="projectinput6">Cấp
+                                                        bậc mong muốn</label>
+                                                    <div class="col-md-9">
+                                                        <select id="projectinput6" name="interested"
+                                                            class="form-control"> option value="none"
+                                                            selected="" disabled="">Cấp bậc
+                                                            </option>
+                                                            <option value="design">Developer</option>
+                                                            <option value="development">Leader</option>
+                                                            <option value="illustration">Project Manager</option>
+                                                            <option value="branding">CEO</option>
+                                                            <option value="video">Director</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- // Basic form layout section end -->
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4 offset-md-7">
+        <button class="btn btn-lg btn-block font-medium-1 btn-outline-cyan mb-1 block-without-msg">SUBMIT</button>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

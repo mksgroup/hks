@@ -1,0 +1,194 @@
+<div th:fragment="detail">
+    <!-- <div class="col-xl-4 col-md-6 col-12"> -->
+    <div class="card profile-card-with-stats border-teal border-lighten-2">
+        <div class="text-center">
+            <div class="card-body">
+                <img src="themes/robust-admin/app-assets/images/portrait/medium/avatar-m-7.png"
+                    class="rounded-circle  height-150" alt="Card image">
+            </div>
+            <div class="card-body">
+                <h4 class="card-title">Trần Quang Hoài</h4>
+                <ul class="list-inline list-inline-pipe">
+                    <li>tranquanghoaibmt@gmail.com</li>
+                </ul>
+                <h6 class="card-subtitle text-muted">Project Manager</h6>
+            </div>
+            <div class="btn-group" role="group" aria-label="Profile example">
+                <button type="button" class="btn btn-float box-shadow-0 btn-outline-info btn-round">
+                    <span class="ladda-label"><i class="fa fa-bell-o"></i> <span>12+</span> </span> <span
+                        class="ladda-spinner"></span>
+                </button>
+                <button type="button" class="btn btn-float box-shadow-0 btn-outline-info btn-round">
+                    <span class="ladda-label"><i class="fa fa-heart-o"></i> <span>25</span> </span> <span
+                        class="ladda-spinner"></span>
+                </button>
+                <button type="button" class="btn btn-float box-shadow-0 btn-outline-info btn-round">
+                    <span class="ladda-label"><i class="fa fa-briefcase"></i> <span>5</span> </span> <span
+                        class="ladda-spinner"></span>
+                </button>
+                <button type="button" class="btn btn-float box-shadow-0 btn-outline-info btn-round">
+                    <span class="ladda-label"><i class="ft-mail"></i> <span>75+</span> </span> <span
+                        class="ladda-spinner"></span>
+                </button>
+                <button type="button" class="btn btn-float box-shadow-0 btn-outline-info btn-round">
+                    <span class="ladda-label"><i class="fa fa-dashcube"></i> <span>125</span> </span> <span
+                        class="ladda-spinner"></span>
+                </button>
+            </div>
+            <div class="card-body">
+                <p>Lorem ipsum dolor sit amet, autem imperdiet et nam. Nullam labores id quo, sed ei.</p>
+                <!-- <button type="button" class="btn btn-outline-danger btn-md btn-round mr-1">
+                        <i class="fa fa-plus"></i> Follow
+                    </button>
+                    <button type="button" class="btn btn-outline-primary btn-md btn-round mr-1">
+                        <i class="ft-user"></i> Profile
+                    </button> -->
+            </div>
+        </div>
+    </div>
+    <div class="col-md-8 offset-md-2">
+        <div class="card">
+            <div class="card-body">
+                <ul class="nav nav-tabs nav-justified" id="tabs-icon-drag">
+                    <li class="nav-item"><a class="nav-link" id="activeIcon-tab" data-toggle="tab"
+                        href="#activeIcon" aria-controls="activeIcon" aria-expanded="true"><i class="fa fa-check"></i>
+                            Hồ sơ năng lực</a></li>
+                    <li class="nav-item"><a class="nav-link active" id="linkIcon-tab" data-toggle="tab"
+                        href="#linkIcon" aria-controls="linkIcon" aria-expanded="false"><i class="fa fa-link"></i>
+                            Giới thiệu</a></li>
+                    <li class="nav-item"><a class="nav-link" id="linkOptIcon-tab" data-toggle="tab"
+                        href="#linkOptIcon" aria-controls="linkOptIcon"><i class="fa fa-share-alt-square"></i>Đánh
+                            giá khách hàng</a></li>
+                </ul>
+                <div class="tab-content px-1 pt-1">
+                    <div role="tabpanel" class="tab-pane" id="activeIcon" aria-labelledby="activeIcon-tab"
+                        aria-expanded="true">
+                        <p style="align-text: center; font-size: 15px">I'm Wordpress developer, I have 3 years
+                            experience about WordPress and 6 years experience about PHP / MySql. I'm having full time
+                            job at Cactusthemes ( http://www.cactusthemes.com ).</p>
+                    </div>
+                    <div class="tab-pane active" id="linkIcon" role="tabpanel" aria-labelledby="linkIcon-tab"
+                        aria-expanded="false">
+                        <div class="timeline-card card border-grey border-lighten-2">
+                            <div class="card-header">
+                                <h4 class="card-title">
+                                    <a href="#">Portfolio project work</a>
+                                </h4>
+                                <p class="card-subtitle text-muted mb-0 pt-1">
+                                    <span class="font-small-3">5 hours ago</span>
+                                </p>
+                                <a class="heading-elements-toggle"><i class="fa fa-ellipsis-v font-medium-3"></i></a>
+                                <div class="heading-elements">
+                                    <ul class="list-inline mb-0">
+                                        <li><a data-action="reload"><i class="ft-rotate-cw"></i></a></li>
+                                        <li><a data-action="expand"><i class="ft-maximize"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <div class="card-content">
+                                    <div class="card-body">
+                                        <p class="card-text">Nullam facilisis fermentum aliquam. Suspendisse ornare
+                                            dolor vitae libero hendrerit auctor lacinia a ligula. Curabitur elit tellus,
+                                            porta ut orci sed, fermentum bibendum nisi.</p>
+                                        <ul class="list-inline">
+                                            <li class="pr-1"><a href="#" class=""> <span
+                                                    class="fa fa-thumbs-o-up"></span> Like
+                                            </a></li>
+                                            <li class="pr-1"><a href="#" class=""> <span
+                                                    class="fa fa-commenting-o"></span> Comment
+                                            </a></li>
+                                            <li><a href="#" class=""> <span class="fa fa-share-alt"></span>
+                                                    Share
+                                            </a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="card-footer px-0 py-0">
+                                    <div class="card-body">
+                                        <div class="media">
+                                            <div class="media-left mr-1">
+                                                <a href="#"> <span class="avatar avatar-online"> <img
+                                                        src="themes/robust-admin/app-assets/images/portrait/small/avatar-s-1.png"
+                                                        alt="avatar">
+                                                </span>
+                                                </a>
+                                            </div>
+                                            <div class="media-body">
+                                                <p class="text-bold-600 mb-0">
+                                                    <a href="#">Jason Ansley</a>
+                                                </p>
+                                                <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus
+                                                    scelerisque ante sollicitudin commodo.</p>
+                                                <ul class="list-inline">
+                                                    <li class="pr-1"><a href="#" class=""> <span
+                                                            class="fa fa-thumbs-o-up"></span> Like
+                                                    </a></li>
+                                                    <li class="pr-1"><a href="#" class=""> <span
+                                                            class="fa fa-commenting-o"></span> Reply
+                                                    </a></li>
+                                                </ul>
+                                                <div class="media">
+                                                    <div class="media-left mr-1">
+                                                        <a href="#"> <span class="avatar avatar-online"> <img
+                                                                src="themes/robust-admin/app-assets/images/portrait/small/avatar-s-18.png"
+                                                                alt="avatar">
+                                                        </span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="media-body">
+                                                        <p class="text-bold-600 mb-0">
+                                                            <a href="#">Janice Johnston</a>
+                                                        </p>
+                                                        <p>Gravida nulla. Nulla vel metus scelerisque ante
+                                                            sollicitudin.</p>
+                                                        <ul class="list-inline">
+                                                            <li class="pr-1"><a href="#" class=""> <span
+                                                                    class="fa fa-thumbs-o-up"></span> Like
+                                                            </a></li>
+                                                            <li class="pr-1"><a href="#" class=""> <span
+                                                                    class="fa fa-commenting-o"></span> Reply
+                                                            </a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <fieldset class="form-group position-relative has-icon-left mb-0">
+                                            <input type="text" class="form-control" placeholder="Write comments...">
+                                            <div class="form-control-position">
+                                                <i class="fa fa-dashcube"></i>
+                                            </div>
+                                        </fieldset>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="tab-pane" id="dropdownOptIcon1" role="tabpanel" aria-labelledby="dropdownOptIcon1-tab"
+                        aria-expanded="false">
+                        <p>Fruitcake marshmallow donut wafer pastry chocolate topping cake. Powder powder gummi
+                            bears jelly beans. Gingerbread cake chocolate lollipop. Jelly oat cake pastry marshmallow
+                            sesame snaps.</p>
+                    </div>
+                    <div class="tab-pane" id="dropdownOptIcon2" role="tabpanel" aria-labelledby="dropdownOptIcon2-tab"
+                        aria-expanded="false">
+                        <p>Soufflé cake gingerbread apple pie sweet roll pudding. Sweet roll dragée topping cotton
+                            candy cake jelly beans. Pie lemon drops sweet pastry candy canes chocolate cake bear claw
+                            cotton candy wafer.</p>
+                    </div>
+                    <div class="tab-pane" id="linkOptIcon" role="tabpanel" aria-labelledby="linkOptIcon-tab"
+                        aria-expanded="false">
+                        <p>Cookie icing tootsie roll cupcake jelly-o sesame snaps. Gummies cookie dragée cake jelly
+                            marzipan donut pie macaroon. Gingerbread powder chocolate cake icing. Cheesecake gummi bears
+                            ice cream marzipan.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- </div> -->
+</div>
