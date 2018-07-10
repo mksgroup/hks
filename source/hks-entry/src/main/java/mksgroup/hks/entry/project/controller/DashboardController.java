@@ -18,7 +18,12 @@ public class DashboardController {
      * @return
      */
     @RequestMapping("/dashboard")
-    public String login() {
+    public String dashboard() {
         return "dashboard/summary";
+    }
+    
+    @RequestMapping("/dashboard/approve")
+    public String approve() {
+        return "dashboard/approve";
     }
 }

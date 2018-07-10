@@ -1,0 +1,216 @@
+<div th:fragment="dashboard-body">
+    <div class="app-content content">
+        <div class="content-wrapper">
+            <div class="content-body">
+                <section id="image-grid" class="card">
+                    <div class="card-header">
+                        <h4 class="card-title">Dash board management</h4>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <input type="text" class="form-control form-control-xl input-xl" id="iconLeft1"
+                                        placeholder="Explore ...">
+                                </div>
+                                <div class="col-md-2">
+                                    <select class="form-control" id="basicSelect">
+                                        <option>Category</option>
+                                        <option>Bài viết</option>
+                                        <option>Thông tin chuyên gia</option>
+                                        <option>Thông tin công ty</option>
+                                        <option>Tin tức</option>
+                                        <option>Sự kiện</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-2">
+                                    <select class="form-control" id="basicSelect">
+                                        <option>Status</option>
+                                        <option>Đã duyệt</option>
+                                        <option>Đang chờ duyệt</option>
+                                        <option>Không duyệt</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-2">
+                                    <a href="#" class="btn btn-primary btn-md"><i class="ft-search"></i>Search</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="masonry-grid my-gallery mx-1" itemscope itemtype="http://schema.org/ImageGallery">
+                            <!-- width of .grid-sizer used for columnWidth -->
+                            <div class="grid-sizer"></div>
+
+                            <div class="grid-item">
+                                <figure class="card border-grey border-lighten-2" itemprop="associatedMedia" itemscope
+                                    itemtype="http://schema.org/ImageObject">
+                                    <a href="themes/robust-admin/app-assets/images/portfolio/width-600/portfolio-8.jpg"
+                                        itemprop="contentUrl" data-size="600x446"> <img
+                                        class="gallery-thumbnail card-img-top"
+                                        src="themes/robust-admin/app-assets/images/portfolio/width-600/portfolio-8.jpg"
+                                        itemprop="thumbnail" alt="Image description" />
+                                    </a>
+                                    <div class="card-body">
+                                        <h4 class="card-title">Card title 1</h4>
+                                        <p class="card-text">Short description 1</p>
+                                        <div class="row">
+                                            <div class="col-md-3">
+                                                <a href="#" data-toggle="tooltip" data-placement="bottom"
+                                                    placeholder="Tooltip at bottom" data-title="Like"
+                                                    data-original-title="" title=""> <i class="ft-thumbs-up blue"
+                                                    style="font-size: 200%"></i></a> <span><b>1000</b></span>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <a href="#" data-toggle="tooltip" data-placement="bottom"
+                                                    placeholder="Tooltip at bottom" data-title="Download"
+                                                    data-original-title="" title=""> <i class="ft-download blue"
+                                                    style="font-size: 200%"></i></a> <span><b>1000</b></span>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <a href="#" data-toggle="tooltip" data-placement="bottom"
+                                                    placeholder="Tooltip at bottom" data-title="Comment"
+                                                    data-original-title="" title=""> <i class="ft-cloud blue"
+                                                    style="font-size: 200%"></i></a> <span><b>1000</b></span>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <a href="#" data-toggle="tooltip" data-placement="bottom"
+                                                    placeholder="Tooltip at bottom" data-title="Share"
+                                                    data-original-title="" title=""> <i class="ft-share-2 blue"
+                                                    style="font-size: 200%"></i></a> <span><b>1000</b></span>
+                                            </div>
+
+                                        </div>
+                                        <span class="dropdown">
+                                            <button id="btnSearchDrop2" type="button" data-toggle="dropdown"
+                                                aria-haspopup="true" aria-expanded="true"
+                                                class="btn btn-primary dropdown-toggle dropdown-menu-right"
+                                                style="margin-top: 30px">
+                                                <i class="ft-settings"></i>Chờ duyệt
+                                            </button> <span aria-labelledby="btnSearchDrop2"
+                                            class="dropdown-menu mt-1 dropdown-menu-right"> <a href="#"
+                                                class="dropdown-item"><i class="ft-edit-2"></i> Duyệt</a> <a href="#"
+                                                class="dropdown-item"><i class="ft-trash-2"></i> Edit</a> <a href="#"
+                                                class="dropdown-item"><i class="ft-trash-2"></i> Delete</a>
+                                        </span>
+                                        </span>
+                                    </div> <!-- End 1 items-->
+                                    
+                                </figure>
+                            </div>
+
+                            <div class="grid-item">
+                                <figure class="card border-grey border-lighten-2" itemprop="associatedMedia" itemscope
+                                    itemtype="http://schema.org/ImageObject">
+                                    <a href="themes/robust-admin/app-assets/images/portfolio/width-600/portfolio-21.jpg"
+                                        itemprop="contentUrl" data-size="600x798"> <img
+                                        class="gallery-thumbnail card-img-top"
+                                        src="themes/robust-admin/app-assets/images/portfolio/width-600/portfolio-21.jpg"
+                                        itemprop="thumbnail" alt="Image description" />
+                                    </a>
+                                    <div class="card-body">
+                                        <h4 class="card-title">Card title 2</h4>
+                                        <p class="card-text">Short description 2</p>
+
+                                        <div class="row">
+                                            <div class="col-md-3">
+                                                <a href="#" data-toggle="tooltip" data-placement="bottom"
+                                                    placeholder="Tooltip at bottom" data-title="Like"
+                                                    data-original-title="" title=""> <i class="ft-thumbs-up blue"
+                                                    style="font-size: 200%"></i></a> <span><b>1000</b></span>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <a href="#" data-toggle="tooltip" data-placement="bottom"
+                                                    placeholder="Tooltip at bottom" data-title="Download"
+                                                    data-original-title="" title=""> <i class="ft-download blue"
+                                                    style="font-size: 200%"></i></a> <span><b>1000</b></span>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <a href="#" data-toggle="tooltip" data-placement="bottom"
+                                                    placeholder="Tooltip at bottom" data-title="Comment"
+                                                    data-original-title="" title=""> <i class="ft-cloud blue"
+                                                    style="font-size: 200%"></i></a> <span><b>1000</b></span>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <a href="#" data-toggle="tooltip" data-placement="bottom"
+                                                    placeholder="Tooltip at bottom" data-title="Share"
+                                                    data-original-title="" title=""> <i class="ft-share-2 blue"
+                                                    style="font-size: 200%"></i></a> <span><b>1000</b></span>
+                                            </div>
+
+                                        </div>
+                                        <span class="dropdown">
+                                            <button id="btnSearchDrop2" type="button" data-toggle="dropdown"
+                                                aria-haspopup="true" aria-expanded="true"
+                                                class="btn btn-primary dropdown-toggle dropdown-menu-right"
+                                                style="margin-top: 30px">
+                                                <i class="ft-settings"></i>Đã duyệt
+                                            </button> <span aria-labelledby="btnSearchDrop2"
+                                            class="dropdown-menu mt-1 dropdown-menu-right"> <a href="#"
+                                                class="dropdown-item"><i class="ft-trash-2"></i> Edit</a> <a href="#"
+                                                class="dropdown-item"><i class="ft-trash-2"></i> Delete</a>
+                                        </span>
+                                        </span>
+                                    </div>
+                                </figure>
+                            </div>
+
+                            <div class="grid-item">
+                                <figure class="card border-grey border-lighten-2" itemprop="associatedMedia" itemscope
+                                    itemtype="http://schema.org/ImageObject">
+                                    <a href="themes/robust-admin/app-assets/images/portfolio/width-600/portfolio-21.jpg"
+                                        itemprop="contentUrl" data-size="600x798"> <img
+                                        class="gallery-thumbnail card-img-top"
+                                        src="themes/robust-admin/app-assets/images/portfolio/width-600/portfolio-21.jpg"
+                                        itemprop="thumbnail" alt="Image description" />
+                                    </a>
+                                    <div class="card-body">
+                                        <h4 class="card-title">Card title 3</h4>
+                                        <p class="card-text">Short description 3</p>
+                                        <div class="row">
+                                            <div class="col-md-3">
+                                                <a href="#" data-toggle="tooltip" data-placement="bottom"
+                                                    placeholder="Tooltip at bottom" data-title="Like"
+                                                    data-original-title="" title=""> <i class="ft-thumbs-up blue"
+                                                    style="font-size: 200%"></i></a> <span><b>1000</b></span>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <a href="#" data-toggle="tooltip" data-placement="bottom"
+                                                    placeholder="Tooltip at bottom" data-title="Download"
+                                                    data-original-title="" title=""> <i class="ft-download blue"
+                                                    style="font-size: 200%"></i></a> <span><b>1000</b></span>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <a href="#" data-toggle="tooltip" data-placement="bottom"
+                                                    placeholder="Tooltip at bottom" data-title="Comment"
+                                                    data-original-title="" title=""> <i class="ft-cloud blue"
+                                                    style="font-size: 200%"></i></a> <span><b>1000</b></span>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <a href="#" data-toggle="tooltip" data-placement="bottom"
+                                                    placeholder="Tooltip at bottom" data-title="Share"
+                                                    data-original-title="" title=""> <i class="ft-share-2 blue"
+                                                    style="font-size: 200%"></i></a> <span><b>1000</b></span>
+                                            </div>
+                                            <span class="dropdown">
+                                                <button id="btnSearchDrop2" type="button" data-toggle="dropdown"
+                                                    aria-haspopup="true" aria-expanded="true"
+                                                    class="btn btn-primary dropdown-toggle dropdown-menu-right"
+                                                    style="margin-top: 30px">
+                                                    <i class="ft-settings"></i>Chờ duyệt
+                                                </button> <span aria-labelledby="btnSearchDrop2"
+                                                class="dropdown-menu mt-1 dropdown-menu-right"> <a href="#"
+                                                    class="dropdown-item"><i class="ft-trash-2"></i> Duyệt</a> <a
+                                                    href="#" class="dropdown-item"><i class="ft-trash-2"></i> Edit</a> <a
+                                                    href="#" class="dropdown-item"><i class="ft-trash-2"></i> Delete</a>
+                                            </span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+</div>
