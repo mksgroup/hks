@@ -1,0 +1,155 @@
+<div th:fragment="dashboard-approve-body">
+    <div class="app-content content">
+        <div class="content-wrapper">
+            <div class="content-header row">
+                <div class="content-header-left col-md-6 col-12 mb-2">
+                    <h3 class="content-header-title">About items</h3>
+                    <div class="row breadcrumbs-top">
+                        <div class="breadcrumb-wrapper col-12">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                                <li class="breadcrumb-item"><a href="#">Quản lý nội dung</a></li>
+                                <li class="breadcrumb-item active">Chi tiết bài đăng</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="content-body">
+                <section id="content" class="card">
+                    <div class="card-content">
+                        <div class="card-body row">
+                            <div class="col-md-6">
+                                <div class="timeline-item">
+                                    <div class="timeline-card">
+                                        <div class="card-header">
+                                            <div class="media">
+                                                <div class="media-left mr-1">
+                                                    <a href="#"> <span class="avatar avatar-md avatar-busy"><img
+                                                            th:src="@{#{theme.root} + 'app-assets/images/portrait/small/avatar-s-18.png'}"
+                                                            alt="avatar"></span> <i></i>
+                                                    </a>
+                                                </div>
+                                                <div class="media-body">
+                                                    <h4 class="card-title">
+                                                        <a href="#">Full name</a>
+                                                    </h4>
+                                                    <p class="card-subtitle text-muted mb-0 pt-1">
+                                                        <span class="font-small-3">15 Oct, 2015 at 8.00 A.M</span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-content">
+                                            <div class="center-slider mx-auto form-group">
+                                                <div id="default-slider" style="height: 360px;">
+                                                    <ul>
+                                                        <li><img th:src="@{#{theme.root} + 'app-assets/images/carousel/09.jpg'}"
+                                                            alt="01" class="img-fluid" width="480" height="360"></li>
+                                                        <li><img th:src="@{#{theme.root} + 'app-assets/images/carousel/11.jpg'}"
+                                                            alt="02" class="img-fluid" width="480" height="360"></li>
+                                                        <li><img th:src="@{#{theme.root} + 'app-assets/images/carousel/10.jpg'}"
+                                                            alt="03" class="img-fluid" width="480" height="360"></li>
+                                                        <li><img th:src="@{#{theme.root} + 'app-assets/images/carousel/15.jpg'}"
+                                                            alt="04" class="img-fluid" width="480" height="360"></li>
+                                                        <li><img th:src="@{#{theme.root} + 'app-assets/images/carousel/01.jpg'}"
+                                                            alt="05" class="img-fluid" width="480" height="360"></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="card-content">
+                                                <div class="card-body">
+                                                    <h4>Title</h4>
+                                                    <p class="card-text">Title of item</p>
+                                                </div>
+                                                <div class="card-body">
+                                                    <h4>Description</h4>
+                                                    <p class="card-text">Nullam facilisis fermentum aliquam.
+                                                        Suspendisse ornare dolor vitae libero hendrerit auctor lacinia a
+                                                        ligula. Curabitur elit tellus, porta ut orci sed, fermentum
+                                                        bibendum nisi.</p>
+                                                </div>
+                                                <div class="card-body">
+                                                    <button id="approve-btn" type="submit" class="btn btn-info"
+                                                        style="width: 150px;">Duyệt</button>
+                                                    <button id="approve-btn" type="submit" class="btn btn-info"
+                                                        style="width: 150px; margin-left: 30px;">Từ chối</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /.col-md-6 -->
+                            <div class="col-md-6">
+                                <div class="card-content">
+                                    <!-- attached -->
+                                    <div class="card-body">
+                                        <h4>Attached</h4>
+                                        <div class="table-responsive">
+                                            <table class="table">
+                                                <thead>
+                                                    <tr>
+                                                        <th>#</th>
+                                                        <th>File name</th>
+                                                        <th>Extension</th>
+                                                        <th>Uploaded</th>
+                                                        <th></th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <th scope="row">1</th>
+                                                        <td>Mark</td>
+                                                        <td>.pdf</td>
+                                                        <td>15 Oct, 2015</td>
+                                                        <td><a href="#" class="dropdown-item"><i
+                                                                class="ft-edit-2"></i> Edit</a> <a href="#"
+                                                            class="dropdown-item"><i class="ft-trash-2"></i> Delete</a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">2</th>
+                                                        <td>Jacob</td>
+                                                        <td>.png</td>
+                                                        <td>15 Oct, 2015</td>
+                                                        <td><a href="#" class="dropdown-item"><i
+                                                                class="ft-edit-2"></i> Edit</a> <a href="#"
+                                                            class="dropdown-item"><i class="ft-trash-2"></i> Delete</a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">3</th>
+                                                        <td>Larry</td>
+                                                        <td>.jpg</td>
+                                                        <td>15 Oct, 2015</td>
+                                                        <td><a href="#" class="dropdown-item"><i
+                                                                class="ft-edit-2"></i> Edit</a> <a href="#"
+                                                            class="dropdown-item"><i class="ft-trash-2"></i> Delete</a></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <!-- /.attached -->
+                                        <!-- about -->
+                                        <br />
+                                        <h4>About</h4>
+                                        <p class="card-text">
+                                            <i> Uploaded: 15 Oct, 2015 at 8.00 A.M </i> <br /> <i> Category:
+                                                Article </i>
+                                        </p>
+                                        <!-- /.about -->
+
+
+                                        <!-- Image grid -->
+
+                                    </div>
+
+                                </div>
+                                <!-- /.col-md-6 -->
+                            </div>
+
+                        </div>
+                </section>
+            </div>
+        </div>
+    </div>
+</div>
